@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace HW_03_04_2020
 {
-    class Program
-    {
+  class Program
+  {
         static void Main(string[] args)
         {
             Rectangle h1 = new Rectangle();
@@ -18,9 +19,35 @@ namespace HW_03_04_2020
             System.Console.WriteLine($"result={h1.Area}");
             System.Console.WriteLine($"result={h1.Perimeter}");
             Console.ReadKey();
-        }
+            ///////////////////////////////////////////////////
+             
+                 Console.Write("Author:"); string Authorq = Console.ReadLine();
+            Console.Write("Title:"); string Titleq = Console.ReadLine();
+            Console.Write("Content:"); string Contentq = Console.ReadLine();
 
-    }
+
+              Book B=new Book(); 
+              Title T=new Title();
+              Author A=new Author();
+              Content C=new Content();
+
+              Console.ForegroundColor = ConsoleColor.Blue;
+                   T.show(Titleq);
+            Console.ForegroundColor = ConsoleColor.Red;
+             A.show(Authorq);
+            Console.ForegroundColor = ConsoleColor.Green;
+             C.show(Contentq);
+            Console.ForegroundColor = ConsoleColor.White;
+
+
+                 
+
+               
+            
+        }
+           
+  }
+           
     class Rectangle
     {
         public double side1 { get; set; }
@@ -49,5 +76,59 @@ namespace HW_03_04_2020
         {
             return 2*(this.side1+this.side3);
         }
+
     }
-}
+  //////////////////////////////////////////////////////////////////////////
+     
+     class Book
+     {
+      public string Books {get;set;}
+
+     public  void show(string Books)
+      {
+        Console.ForegroundColor = ConsoleColor.Red;  
+         System.Console.WriteLine(Books);
+      }
+     }
+     class Title
+     {
+       public string human {get;set;}
+          public  void show(string human)
+          {
+            Console.ForegroundColor = ConsoleColor.Green;  
+            System.Console.WriteLine(human);
+
+          }
+     }
+     class Author
+     {
+       public string authors {get;set;}
+       public  void show(string authors)
+       {
+         Console.ForegroundColor = ConsoleColor.Blue;  
+         System.Console.WriteLine(authors);
+       }
+     }
+     class Content
+     {
+       public string contents{get;set;}
+       public  void show(string contents)
+       {
+         Console.ForegroundColor = ConsoleColor.Yellow;  
+         System.Console.WriteLine(contents);
+       }
+     }
+
+      
+    
+                   
+           
+           
+          
+
+           
+
+
+
+    
+} 
