@@ -1,0 +1,13 @@
+D:\programming\Projects AlifC#\HW-03-04-2020\obj\Debug\netcoreapp3.1\HW-03-04-2020.csprojAssemblyReference.cache
+D:\programming\Projects AlifC#\HW-03-04-2020\obj\Debug\netcoreapp3.1\HW-03-04-2020.csproj.CoreCompileInputs.cache
+D:\programming\Projects AlifC#\HW-03-04-2020\obj\Debug\netcoreapp3.1\HW-03-04-2020.AssemblyInfoInputs.cache
+D:\programming\Projects AlifC#\HW-03-04-2020\obj\Debug\netcoreapp3.1\HW-03-04-2020.AssemblyInfo.cs
+D:\programming\Projects AlifC#\HW-03-04-2020\bin\Debug\netcoreapp3.1\HW-03-04-2020.exe
+D:\programming\Projects AlifC#\HW-03-04-2020\bin\Debug\netcoreapp3.1\HW-03-04-2020.deps.json
+D:\programming\Projects AlifC#\HW-03-04-2020\bin\Debug\netcoreapp3.1\HW-03-04-2020.runtimeconfig.json
+D:\programming\Projects AlifC#\HW-03-04-2020\bin\Debug\netcoreapp3.1\HW-03-04-2020.runtimeconfig.dev.json
+D:\programming\Projects AlifC#\HW-03-04-2020\bin\Debug\netcoreapp3.1\HW-03-04-2020.dll
+D:\programming\Projects AlifC#\HW-03-04-2020\bin\Debug\netcoreapp3.1\HW-03-04-2020.pdb
+D:\programming\Projects AlifC#\HW-03-04-2020\obj\Debug\netcoreapp3.1\HW-03-04-2020.dll
+D:\programming\Projects AlifC#\HW-03-04-2020\obj\Debug\netcoreapp3.1\HW-03-04-2020.pdb
+D:\programming\Projects AlifC#\HW-03-04-2020\obj\Debug\netcoreapp3.1\HW-03-04-2020.genruntimeconfig.cache
