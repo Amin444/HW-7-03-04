@@ -25,23 +25,13 @@ namespace HW_03_04_2020
             Console.Write("Title:"); string Titleq = Console.ReadLine();
             Console.Write("Content:"); string Contentq = Console.ReadLine();
 
-
-              Book B=new Book(); 
-              Title T=new Title();
-              Author A=new Author();
-              Content C=new Content();
-
-              Console.ForegroundColor = ConsoleColor.Blue;
-                   T.show(Titleq);
-            Console.ForegroundColor = ConsoleColor.Red;
-             A.show(Authorq);
-            Console.ForegroundColor = ConsoleColor.Green;
-             C.show(Contentq);
-            Console.ForegroundColor = ConsoleColor.White;
-
+               Book r = new Book( Authorq, Titleq,Contentq);
+           r.Show();
+           
+             
 
                  
-
+          Console.ReadKey();
                
             
         }
@@ -80,48 +70,68 @@ namespace HW_03_04_2020
     }
   //////////////////////////////////////////////////////////////////////////
      
-     class Book
-     {
-      public string Books {get;set;}
+    class Book
+    {
+      public Title title {get;set;}
+        public Author author{get;set;}
+        public Content content{get;set;}
 
-     public  void show(string Books)
+            public void Show()
+            {
+
+               Console.ForegroundColor = ConsoleColor.Cyan;
+                title.Show();
+                Console.ForegroundColor = ConsoleColor.Green;
+                author.Show();
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                content.Show();
+                
+            }
+            public Book()
+            {
+               Title T =new Title();
+              Author A=new Author();
+             Content C=new Content();
+
+            }
+        public  Book(string Titlename,string Aouthorname, string includcontent)
+        {
+        Title T =new Title();
+        Author A=new Author();
+        Content C=new Content();
+        T.Titlename=Titlename;
+        A.Aouthorname=Aouthorname;
+        C.includcontent=includcontent;
+        }
+    }
+    class Title
+    {
+      public string Titlename{get;set;}
+      public void Show()
       {
-        Console.ForegroundColor = ConsoleColor.Red;  
-         System.Console.WriteLine(Books);
+        System.Console.WriteLine(Titlename);
       }
-     }
-     class Title
-     {
-       public string human {get;set;}
-          public  void show(string human)
-          {
-            Console.ForegroundColor = ConsoleColor.Green;  
-            System.Console.WriteLine(human);
-
-          }
-     }
-     class Author
-     {
-       public string authors {get;set;}
-       public  void show(string authors)
+    }
+    class Author
+    {
+         public string Aouthorname{get;set;}
+         public void Show()
+         {
+           System.Console.WriteLine(Aouthorname);
+         }
+    }
+    class Content
+    {
+        public string includcontent {get;set;}
+       public void Show()
        {
-         Console.ForegroundColor = ConsoleColor.Blue;  
-         System.Console.WriteLine(authors);
+         System.Console.WriteLine(includcontent);
        }
-     }
-     class Content
-     {
-       public string contents{get;set;}
-       public  void show(string contents)
-       {
-         Console.ForegroundColor = ConsoleColor.Yellow;  
-         System.Console.WriteLine(contents);
-       }
-     }
-
+    }
       
     
-                   
+          
+          
            
            
           
