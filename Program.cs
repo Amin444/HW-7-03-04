@@ -30,9 +30,13 @@ namespace HW_03_04_2020
             r.author.Show();
             r.content.Show();
 
-
-
-                  Foods F=new Foods();
+                    Laptob L=new Laptob()
+                    {
+                              Names="Dell",
+                              Models="Inspires 15 5000",
+                              Prices="700$",  
+                    };
+                            L.GetInfo();
 
             Console.ReadKey();
 
@@ -122,27 +126,37 @@ namespace HW_03_04_2020
         {
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             System.Console.WriteLine(includcontent);
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
-        class Foods
-        {
-          public string Name {get;set;}
-            public string WitchCountry{get;set;}
-            public string ForVegeteble{get;set;}
-            public string ForGurman{get;set;}
+     class Laptob
+     {
+            public string Names{get;set;}
+            public string Models{get;set;}
+            public string Prices{get;set;}
 
-            public  Foods(string Name,string WitchCountry,string ForVegeteble,string ForGurman)
-            {
-                  this.Name=Name;
-                  this.WitchCountry=WitchCountry;
-                  this.ForVegeteble=ForVegeteble;
-                  this.ForGurman=ForGurman;
-            }
-            public void Show()
-            {
-              System.Console.WriteLine($"Name={Name} WitchCountry={WitchCountry} ForVegeteble={ForVegeteble} ForGurman={ForGurman}");
-            }
-        }
+                    public Laptob(string Names,string Models,string Prices)
+                    {
+                            this.Names=Names;
+                            this.Models=Models;
+                            this.Prices=Prices;
+                    }
+               public void GetInfo()
+               {
+                        System.Console.WriteLine($"Names={Names}");
+                        System.Console.WriteLine($"Madels={Models}");
+                        System.Console.WriteLine($"Proces={Prices}");
+               }
+                 
+                    public Laptob()
+                    {
+
+                    }
+     } 
+
+
+
+        
 
 }
 
